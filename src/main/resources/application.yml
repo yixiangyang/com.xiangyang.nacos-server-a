@@ -6,6 +6,15 @@ spring:
    name: server-a
   cloud:
     nacos:
-      config:
-        server-addr: 172.16.194.85:8848
-   
+      discovery:
+        server-addr: 121.41.56.97:8848
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 172.16.194.85:8848
+management:
+  # 端点检查（健康检查）
+  endpoints:
+    web:
+      exposure:
+        include: "*"   
