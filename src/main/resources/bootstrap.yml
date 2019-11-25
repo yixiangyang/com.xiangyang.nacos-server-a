@@ -8,6 +8,8 @@ spring:
     nacos:
       discovery:
         server-addr: 121.41.56.97:8848
+      config:
+        server-addr: 121.41.56.97:8848
 #  cloud:
 #    nacos:
 #      config:
